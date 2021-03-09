@@ -45,6 +45,7 @@ img {
 }
 .address {
     font-style: normal;
+    margin-top: 20px;
 }
 .visually-hidden {
     position: absolute !important;
@@ -438,7 +439,7 @@ img {
 
 .contact-link {
     display: inline-block;
-    margin-top: 20px;
+    
 
     font-family: var(--first-font);
     font-size: 14px;
