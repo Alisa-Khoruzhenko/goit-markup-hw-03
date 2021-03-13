@@ -332,18 +332,19 @@ img {
     display: flex;
     flex-direction: wrap;
     margin-left: -30px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 .frame {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
 
     background: var(--main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .profession-command {
+    margin-bottom: 10px;
     font-family: var(--first-font);
     font-weight: 500;
     font-size: 16px;
@@ -355,7 +356,7 @@ img {
 }
 .profession {
     margin-top: 10px;
-
+    margin-bottom: 14px;
     font-family: var(--first-font);
     font-size: 16px;
     line-height: 1.18;
@@ -363,40 +364,41 @@ img {
     letter-spacing: 0.03em;
 
     color: var(--tel-color);
-    
 }
 .name {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 30px;
 }
 .icon-list {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
-.icon-item {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: var(--main-color);
+.icon-list-item {
+    margin-right: 10px;
+}
+.icon-list-item:not(:last-child) {
+    margin-right: 10px;
 }
 
-.icon-item:focus,
-.icon-item:hover {
-    fill: var(--accent-color);
-}
-.icon-item:focus .team-icon,
-.icon-item:hover .team-icon {
-    fill: var(--main-color);
-}
-.team-icon {
+.icon-item {
+    display: flex;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-color);
+    background-color: var(--main-color);
+}
+.team-icon {
+    width: 20px;
+    height: 20px;
+    
+    fill: currentColor;
+}
+.icon-item:hover,
+.icon-item:focus {
+    color: var(--main-color);
+    background-color: var(--accent-color);
 }
 
 
