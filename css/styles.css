@@ -107,8 +107,7 @@ img {
 /* ============== HEADER ============== */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
     border-bottom: 1px solid #ECECEC;
 }
 .header > .container {
@@ -123,12 +122,18 @@ img {
 .navigation-list {
     display: flex;
     align-items: center;
-  
+    
 }
 .navigation-list > .navigation-item:not(:last-child) {
     margin-right: 50px;
 }
 .navigation-link {
+    display: flex;
+    align-items: center;
+    margin-left: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -145,37 +150,37 @@ img {
 .site-nav {
     display: flex;
     align-items: center;
-     
+    margin-left: 93px;
 }
 .site-nav > .list:not(:last-child) {
     margin-right: 50px;
 }
 .tel-link {
-    margin-left: auto;
-    
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--tel-color);
-    
+}
+.auth-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    align-items: center;
+
+    fill: var(--tel-color);
 }
 .tel-link:hover,
 .tel-link:focus {
     color: var(--accent-color);
 }
-.auth-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    align-items: center;
-    fill: var(--tel-color);
-}
-.tel-link .auth-icon:hover,
-.tel-link .auth-icon:focus {
-    color: var(--accent-color);
+
+.tel-link:hover .auth-icon,
+.tel-link:focus .auth-icon {
+    fill: var(--accent-color);
 }
 
 /* ============== END HEADER ============== */
@@ -186,8 +191,6 @@ img {
     padding: 200px 0;
 
     background-color: var(--background-hero);
-    
-
     background-image: linear-gradient(
       to left,
       rgba(47, 48, 58, 0.4),
@@ -244,13 +247,15 @@ img {
 /* ============== ABOUT US ============== */
 
 .thumb {
-    height: 120px;
-    background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-command);
     border-radius: 4px;
 }
 .about {
@@ -383,7 +388,7 @@ img {
 
 .icon-item:focus,
 .icon-item:hover {
-    background-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 .icon-item:focus .team-icon,
 .icon-item:hover .team-icon {
